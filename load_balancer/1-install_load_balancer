@@ -45,8 +45,8 @@ frontend http_front
 
 backend http_back
     balance roundrobin
-    server [STUDENT_ID]-web-01 [IP_ADDRESS_WEB_01]:80 check
-    server [STUDENT_ID]-web-02 [IP_ADDRESS_WEB_02]:80 check
+    server 6125-web-01 54.162.178.123:80 check
+    server 6125-web-02 54.82.69.77:80 check
 EOL
 
 # Restart and enable HAProxy
